@@ -1,0 +1,32 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#mainFilter{
+   
+    
+    display: inline-block;
+    background: rgba(17, 16, 16, 0.5);
+    
+}
+
+
+
+#mainImage{
+    
+    width: 2000px;
+    height: 1500px;
+    mix-blend-mode: darken;
+}
+
+#mainTitle{
+    font-family: 'Comic Neue',cursive;
+    color: white;
+    font-size: 100px;
+}
+
+#TitleContainer{
+    transform: translate(100px,-500px);
+}

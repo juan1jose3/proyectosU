@@ -2,6 +2,9 @@
 body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Comic Neue',cursive;
+    overflow-x:hidden;
+    
 }
 
 #mainFilter{
@@ -22,11 +25,20 @@ body, html {
 }
 
 #mainTitle{
-    font-family: 'Comic Neue',cursive;
+    
     color: white;
     font-size: 100px;
 }
 
 #TitleContainer{
     transform: translate(100px,-500px);
+}
+
+#presentationTitle{
+    transform: translate(600px,-300px);
+    font-size: 30px;
+}
+
+#contentPresentation img{
+    
 }

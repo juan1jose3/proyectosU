@@ -1,25 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
-    <title>Gorditos</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+     <title>Gorditos</title>
 </head>
 <body>
-   <div id="mainFilter">
-        <img src="pizza_huge.jpeg" alt="pizza" id="mainImage">
-   </div>
 
-   <div id="TitleContainer">
-        <h1 id="mainTitle">The most fatty pizza in the world Has arrived! 🔥🔥</h1>
-   </div>
-   
-    
+     <div id="mainFilter">
+          <img src="pizza_huge.jpeg" alt="pizza" id="mainImage">
+     </div>
+     <div id="TitleContainer">
+          <h1 id="mainTitle">The most fatty pizza <br> in the world Has arrived! 🔥🔥</h1>
+     </div>
+
+     <div id="contentPresentation">
+     <div>
+          <h1>!Nuestro Restaurante¡</h1>
+          <hr>
+
+          </div>
+          <img src="logo.png" alt="logo">
+          <p>
+               ¡Bienvenidos a Gorditos Sabrositos, la pizzería donde las reglas del universo NO APLICAN! 🍕💥 <br>
+               Aquí, las pizzas no solo se comen… ¡te eligen como su nuevo dios! 🌌🛐 Con masas más gruesas <br>
+               que un colchón de nubes, queso que fluye como lava de un volcán sagrado y toppings tan <br>
+               exageradamente deliciosos que podrían causar fenómenos paranormales. 🌋🧀⚡ 
+          </p>
+     </div>
+
+     <div id="pizzas">
+          <div>
+               <h1>!Nuestras pizzas¡</h1>
+               <hr>
+               </div>
+          <div class="imageContainer">
+               <div class="filter"></div>
+               <img src="Regulares.png" alt="Regulares" id="regulares">
+               
+          </div>
+
+          <div class="imageContainer">
+               <div class="filter"></div>  
+               <img src="monstruosas.png" alt="monstruosas" id="monstruosas">
+          </div>
+
+          <div id="textOverlayRegular">
+               <h2>Regulares</h2>
+               <p>
+                    ¡Las pizzas regulares son discos mágicos de pura felicidad!<br>
+                    de queso derretido que se estira como si quisiera abrazarte, salsa de<br>
+                    tomate tan intensa que podría conquistar imperios, y una base crujiente<br>
+                    que cruje más fuerte que tus problemas existenciales.
+
+               </p>
+          </div>
+
+          <div id="textOverlayMonster">
+               <h2>Monstruosas</h2>
+               <p>
+                    No son simples alimentos... ¡SON CRIATURAS DEL CAOS CULINARIO! Su masa<br>
+                    late como un corazón ancestral, burbujeando con queso derretido, La salsa de<br>
+                    tomate no es normal, es pura sangre de sabor, espesa y voraz, devorando la<br>
+                    cordura de quienes se atrevan a morder.
+
+               </p>
+          </div>
+     </div>
+
+     <div class="titulo-formulario">
+          <h2>!Pide una ahora mismo¡</h2>
+     </div>
+     <div class="formulario">
+          <form>
+               <input class="formulario" type="Nombre" placeholder="Escribe tu nombre:" required minlength="3">
+               <br>
+               <input class="formulario" type="Direccion" placeholder="Escribe tu direccion:" required>
+               <br>
+               <input class="formulario" type="tel" placeholder="escribe tu telefono:" required>
+               <br>
+               <button class="formulario-boton">Enviar</button>
+          </form>
+     </div>
+     <div class="pizza-selector">
+          <h2>Tipo De Pizza:</h2>
+          <div class="pizza-option">
+               <h3>Regulares</h3>
+               <button class="select-btn">Select</button>
+          </div>
+          <div class="pizza-option">
+               <h3>MONSTRUOSAS</h3>
+               <button class="select-btn">Select</button>
+          </div>
+     </div>
+     
 </body>
 </html>

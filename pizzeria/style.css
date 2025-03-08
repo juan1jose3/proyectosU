@@ -18,6 +18,7 @@ hr{
     border-radius: 800px;
     width: 300px;
     align-items: center;
+
 }
 
 .imageContainer{
@@ -25,8 +26,10 @@ hr{
     position: relative;
     display:inline-block;
     transform: translate(200px,-400px);
+
     width: auto;
     height: auto;
+
 }
 
 .filter{
@@ -44,6 +47,7 @@ hr{
     height: 500px;
     border-radius: 70px;
     margin: auto;
+
     
 }
 #mainFilter{ 
@@ -141,6 +145,7 @@ hr{
     color: white;
 }
 
+
 .titulo-formulario{
     display: flex;
     align-items: center;
@@ -196,5 +201,6 @@ hr{
     cursor: pointer;
     font-size: 16px;
 }
+
 
 

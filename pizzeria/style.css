@@ -6,14 +6,49 @@ body, html {
     overflow-x:hidden;
     
 }
-
-#mainFilter{
+h1{
+    color: rgba(58, 55, 55, 0.8);
+    font-size: 60px;
    
+}
+
+hr{
+    background-color: red;
+    height: 10px; 
+    border-radius: 800px;
+    width: 300px;
+}
+
+.imageContainer{
     
+    position: relative;
+    display:inline-block;
+    transform: translate(200px,-400px);
+    
+}
+
+.filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: rgba(17, 16, 16, 0.5); 
+    border-radius: 70px;
+
+}
+#pizzas img{
+    width: 700px;
+    height: 500px;
+    border-radius: 70px;
+    
+}
+#mainFilter{ 
     display: inline-block;
     background: rgba(17, 16, 16, 0.5);
     
 }
+
 
 
 
@@ -34,11 +69,76 @@ body, html {
     transform: translate(100px,-500px);
 }
 
-#presentationTitle{
-    transform: translate(600px,-300px);
-    font-size: 30px;
-}
-
-#contentPresentation img{
+#contentPresentation h1{
+ 
+    transform: translate(600px,60px);
+    
     
 }
+
+
+#contentPresentation{
+    width:2000px;
+    height: 800px;
+    transform: translateY(-390px);
+    background-color: rgba(209, 194, 194, 0.5);
+}
+#contentPresentation img{
+    
+    border-radius: 400px;
+    transform: translate(40px,70px);
+    width:500px;
+    height:500px;
+}
+#contentPresentation hr{
+
+    transform: translate(-130px,20px);
+}
+#contentPresentation p{
+    transform: translate(560px,-300px);
+    font-size: 28px;
+}
+#pizzas{
+    position: relative;
+}
+#pizzas h1{
+    transform: translate(650px,-400px);
+    
+}
+
+#pizzas hr{
+    transform: translate(-40px,-440px);
+}
+
+#textOverlayRegular{
+    color:white ;
+
+    transform: translate(300px,-700px);
+}
+#textOverlayRegular h2{
+    font-size: 50px;
+}
+
+#textOverlayRegular p{
+    font-size: 18px;
+}
+
+
+#textOverlayMonster h2{
+    font-size: 50px;
+    font-family: "Creepster", system-ui;
+}
+
+#textOverlayMonster p{
+    font-size: 18px;
+}
+
+#textOverlayMonster{
+    transform: translate(970px,-920px);
+    color: white;
+}
+
+
+
+
+

@@ -4,11 +4,36 @@ body {
   color: rgba(233, 233, 233, 0.616);
   font-family: "Poppins", sans-serif;
 }
+.miNav {
+  background-color: rgb(15, 15, 46);
+}
+
+.dropdown-menu {
+  background-color: rgb(7, 7, 15);
+}
+
+.dropdown-item {
+  color: rgba(233, 233, 233, 0.616);
+}
+
+.dropdown-item:hover {
+  background-color: #c900ff;
+}
 
 .titulo {
   font-size: 80px;
   line-height: 1.5;
   color: white;
+}
+
+.subTitulo {
+  font-size: 40px;
+  color: white;
+}
+
+.subSubTitulo {
+  font-size: 30px;
+  color: rgba(233, 233, 233, 0.616);
 }
 
 .parrafo {
@@ -40,6 +65,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.contenidoLista {
+  font-size: 17px;
+  color: #6074e6;
+}
 #carusel1 {
   max-width: 2000px;
   max-height: 800px;
@@ -47,8 +77,8 @@ body {
   overflow: hidden;
 }
 #carusel2 {
-  max-width: 1500px;
-  max-height: 900px;
+  width: 1300px;
+  height: 600px;
   margin: auto;
   overflow: hidden;
 }
@@ -60,4 +90,8 @@ body {
   justify-content: center;
   gap: 10px;
   background-color: rgb(20, 20, 49);
+}
+
+.lista {
+  text-align: left;
 }

@@ -70,7 +70,7 @@ hr {
   gap: 40px;
 }
 #field textarea {
-  border-radius: 40px;
+  border-radius: 10px;
 }
 #buttons {
   justify-content: center;

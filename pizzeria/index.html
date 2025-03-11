@@ -87,27 +87,34 @@
       <h1>!Pide una ahora mismo¡</h1>
       <hr />
       <div class="formulario">
-        <form>
+        <form onsubmit="return validarSelector()">
           <input
             class="formulario"
-            type="Nombre"
+            type="text"
             placeholder="Escribe tu nombre:"
             required
             minlength="3"
+            name="nombre"
+            pattern="[A-Za-z\s]+"
+            title="No se permiten números"
           />
           <br />
           <input
             class="formulario"
-            type="Direccion"
+            type="text"
             placeholder="Escribe tu direccion:"
             required
+            name="direccion"
           />
           <br />
           <input
             class="formulario"
-            type="tel"
+            type="number"
+            minlength="10"
+            maxlength="10"
             placeholder="escribe tu telefono:"
             required
+            name="tel"
           />
           <h1>!Tipo de Pizza¡</h1>
           <hr>
@@ -118,11 +125,13 @@
             <div>
               <label for="selectorRegulares">Regulares</label><br>
               <select name="selectorRegulares" id="selectorRegulares">
+                
                 <option value="Jamon Y Queso">Jamón y queso 🐖🧀🍕</option>
                 <option value="Napolitana">Napolitana 🍅🍕🇮🇹</option>
                 <option value="Mozzarela">Mozzarela 🧀🍕</option>
                 <option value="Pollo">Pollo 🍗🍕</option>
                 <option value="Mexicana">Mexicana 🌶️🫘🍕</option>
+                <option value="No quiero">No quiero</option>
               </select>
             </div>
 
@@ -141,8 +150,10 @@
                   <option value="Piñazilla">Piñazilla 🍍👾</option>
                   <option value="Coloso Crujiente">Coloso Crujiente 🔥🏰</option>
                   <option value="Abyssizza">Abyssizza 🕳️😱</option>
+                  <option value="No quiero">No quiero</option>
               </select>
             </div>
+            </script>
             
           </div>
           <br>
@@ -156,17 +167,27 @@
             <button type="submit" class="botones">Envíar</button>
             <button type="reset" class="botones">Limpiar</button>
           </div>
-          
-          
-
-          
-          
-
         </div>
     
         <br />
+
+        <script>
+          function validarSelector(){
+            let regulares = document.getElementById("selectorRegulares").value;
+            let monstruosas = document.getElementById("selectorMonster").value;
+  
+            if(regulares === "No quiero" && monstruosas === "No quiero"){
+              alert("Debes elegir al menos una opción.")
+              return false;
+  
+            }
+            alert("Envíado")
+            return true;
+          }
+        </script>
         
       </form>
+      
     </div>
 
 

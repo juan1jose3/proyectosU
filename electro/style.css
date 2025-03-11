@@ -5,7 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .miNav {
-  background-color: rgb(15, 15, 46);
+  background-color: rgb(10, 10, 46);
 }
 
 .dropdown-menu {
@@ -94,4 +94,9 @@ body {
 
 .lista {
   text-align: left;
+}
+
+.marcas {
+  justify-content: center;
+  align-items: center;
 }

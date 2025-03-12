@@ -8,6 +8,10 @@ body {
   background-color: rgb(10, 10, 46);
 }
 
+.nav-link {
+  color: white;
+}
+
 .dropdown-menu {
   background-color: rgb(7, 7, 15);
 }
@@ -53,23 +57,14 @@ body {
   height: 80px;
 }
 
-.boton:hoover {
-  background: linear-gradient(90deg, #c900ff, #6a00f4);
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(255, 0, 255, 0.6);
-}
 .evidencias {
   font-size: 24px;
   font-weight: bold;
   background: linear-gradient(to right, blue, purple, pink);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.contenidoLista {
-  font-size: 17px;
-  color: #6074e6;
-}
 #carusel1 {
   max-width: 2000px;
   max-height: 800px;
@@ -90,10 +85,6 @@ body {
   justify-content: center;
   gap: 10px;
   background-color: rgb(20, 20, 49);
-}
-
-.lista {
-  text-align: left;
 }
 
 .marcas {

@@ -63,7 +63,7 @@
 
     <div class="box">
         <h1>Agenda tu visista</h1>
-        <form id="formulario">
+        <form id="formulario"  onsubmit="enviarFormulario(event)">
             <label for="nombre">Nombre Completo:</label>
             <input type= "text"nombre" id="nombre" required minlength="3" pattern="[A-Za-z\s]+" title="No se permiten números"/>
       
@@ -93,11 +93,11 @@
             <button type="submit" class="boton">Envíar</button>
             <button type="reset" class="boton">Limpiar</button>
             <script>
-              document.getElementById("formulario").addEventListener("submit", function(event){
+              function enviarFormulario(event){
                 event.preventDefault();
-                alert("✔️ Formulario enviado con éxito. Nos pondremos en contacto contigo pronto.")
-                this.reset();
-              })
+                alert("✔️ Formulario enviado con éxito, Nos pondremos en contacto contigo lo más pronto posible");
+                event.target.reset();
+              }
             </script>
           </form>
     </div>

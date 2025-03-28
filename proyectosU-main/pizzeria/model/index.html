@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../view/image/estilos/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gorditos</title>
+  </head>
+  <body>
+    <div id="seccionPrincipal">
+      <img src="../view/image/pizza_huge_Dark (1).png" alt="huge" />
+      <h1>
+        The most fatty pizza in the world <br />
+        has arrived 🔥🔥
+      </h1>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="contenedorEspecial">
+      <h1>!Nuestro Restaurante¡</h1>7
+      <hr />
+      <div id="presentation">
+        <br />
+        <div id="description"></div>
+        <img src="../view/image/logo.png" alt="logo" style="width: 500px; height: 500px" />
+        <p>
+          ¡Bienvenidos a Gorditos Sabrositos, la pizzería donde las reglas del
+          universo NO APLICAN! 🍕💥 <br />
+          Aquí, las pizzas no solo se comen… ¡te eligen como su nuevo dios! 🌌🛐
+          Con masas más gruesas <br />
+          que un colchón de nubes, queso que fluye como lava de un volcán
+          sagrado y toppings tan <br />
+          exageradamente deliciosos que podrían causar fenómenos paranormales.
+          🌋🧀
+        </p>
+      </div>
+    </div>
+
+    <div id="pizzas">
+      <h1>!Nuestras pizzas</h1>
+      <hr />
+      <br />
+      <br />
+      <div id="menu">
+        <div class="container">
+          <img
+            src="../view/image/regulares_dark_text_text.png"
+            alt="regulares_pizza"
+            style="width: 800px; height: 500px"
+            class="imagenesPizza"
+          />
+        </div>
+
+        <div class="container">
+          <img
+            src="../view/image/monstruosas_dark_text.png"
+            alt="monstruosas_dark"
+            style="width: 800px; height: 500px"
+            class="imagenesPizza"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    
+
+    <div class="contenedorEspecial">
+      <h1>!Pide una ahora mismo¡</h1>
+      <hr />
+      <div class="formulario">
+        <form onsubmit="return validarSelector()">
+          <input
+            class="formulario"
+            type="text"
+            placeholder="Escribe tu nombre:"
+            required
+            minlength="3"
+            name="nombre"
+            pattern="[A-Za-z\s]+"
+            title="No se permiten números"
+          />
+          <br />
+          <input
+            class="formulario"
+            type="text"
+            placeholder="Escribe tu direccion:"
+            required
+            name="direccion"
+          />
+          <br />
+          <input
+            class="formulario"
+            type="number"
+            minlength="10"
+            maxlength="10"
+            placeholder="escribe tu telefono:"
+            required
+            name="tel"
+          />
+          <h1>!Tipo de Pizza¡</h1>
+          <hr>
+          <div class="selectores">
+            
+            
+            <br>
+            <div>
+              <label for="selectorRegulares">Regulares</label><br>
+              <select name="selectorRegulares" id="selectorRegulares"> 
+                <option value="Seleccione">seleccione</option>
+                <option value="Jamon Y Queso">Jamón y queso 🐖🧀🍕</option>
+                <option value="Napolitana">Napolitana 🍅🍕🇮🇹</option>
+                <option value="Mozzarela">Mozzarela 🧀🍕</option>
+                <option value="Pollo">Pollo 🍗🍕</option>
+                <option value="Mexicana">Mexicana 🌶️🫘🍕</option>
+                <option value="No quiero">No quiero</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="selectorMonster" id="monster">Monstruosas</label><br>
+              <select name="selectorMonster" id="selectorMonster">
+                  <option value="Seleccione">seleccione</option>
+                  <option value="Quesorrezza">Quesorrezza 🧀💀🔥</option>
+                  <option value="Pepperonioth">Pepperonioth 👁️🍕🔥</option>
+                  <option value="Salsa Infernal">Salsa Infernal 🍅😈🔥</option>
+                  <option value="Necronomizza">Necronomizza 📜🍕🔮</option>
+                  <option value="Champibestia">Champibestia 🍄👹🌲</option>
+                  <option value="Tentáculizza">Tentáculizza 🐙🍕🌊</option>
+                  <option value="Rebanada Maldita">Rebanada Maldita 🔥⚰️🍕</option>
+                  <option value="Carnívora">Carnívora 🥩💀🍕</option>
+                  <option value="Pizzanstein">Pizzanstein ⚡🍕🧟‍♂️</option>
+                  <option value="Piñazilla">Piñazilla 🍍👾</option>
+                  <option value="Coloso Crujiente">Coloso Crujiente 🔥🏰</option>
+                  <option value="Abyssizza">Abyssizza 🕳️😱</option>
+                  <option value="No quiero">No quiero</option>
+              </select>
+            </div>
+            </script>
+            <div>
+              <label for="cantidad">cantidad pizzas</label><br>
+              <select name="cantidad_pizza" id="selectorMonster" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+
+            </div>
+            
+            
+          </div>
+          <br>
+          <h1>Detalles Del Pedido</h1>
+          <hr>
+          <div id="field">
+            
+            <br>
+
+            
+            <label for="detalles"></label><br>
+            <textarea id="detalles" rows="20px" cols="150" required minlength="10"></textarea>
+          </div>
+          <div id="buttons">
+            
+            <button type="submit" class="botones">Envíar</button>
+            <button type="reset" class="botones">Limpiar</button>
+          </div>
+        </div>
+        
+    
+        <br />
+
+
+
+        <script>
+          function validarSelector(){
+            let regulares = document.getElementById("selectorRegulares").value;
+            let monstruosas = document.getElementById("selectorMonster").value;
+  
+            if(regulares === "No quiero" && monstruosas === "No quiero"){
+              alert("Debes elegir al menos una opción.")
+              return false;
+            }
+
+            if(regulares === "Seleccione" && monstruosas === "Seleccione"){
+              alert("Debes elegir al menos una opción.")
+              return false;
+            
+  
+            }
+            alert("Envíado")
+            return true;
+          }
+        </script>
+        
+      </form>
+      
+    </div>
+
+
+   
+    
+  </body>
+</html>

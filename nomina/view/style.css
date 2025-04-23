@@ -93,7 +93,7 @@ body{
 }
 .contenedor-tabla{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
     background-color: #1a1a1a;
     color: white;
@@ -103,9 +103,8 @@ body{
     border-radius: 50px;
 }
 .contenedor-de-tabla{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     height: 100px;
     background-color: #0f0f0f;
     margin: 10px;

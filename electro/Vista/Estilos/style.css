@@ -97,7 +97,7 @@ body {
   align-items: center;
 }
 .carrosel-animado{
-  width: 1500px;
+  width: 1000px;
   height: auto;
 }
 
@@ -119,7 +119,6 @@ section img:hover{
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
-
 
 }
 

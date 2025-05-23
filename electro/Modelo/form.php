@@ -63,21 +63,41 @@
 
     <div class="box">
         <h1>Agenda tu visista</h1>
-        <form id="formulario">
-            <label for="nombre">Nombre Completo:</label>
-            <input type= "text"nombre" id="nombre" required minlength="3" pattern="[A-Za-z\s]+" title="No se permiten números"/>
+        <form id="formulario" method="POST" action="includes/insert.php">
+            <label for="nombre">Cedula:</label>
+            <input type= "text" required minlength="3" pattern="[A-Za-z\s]+" title="No se permiten números" name="cedula "/>
+            <label for="nombre">Nombres:</label>
+            <input type= "text"  required minlength="3" pattern="[A-Za-z\s]+" title="No se permiten números" name="nombres"/>
+
+            <label for="nombre">Apellidos:</label>
+            <input type= "text" required minlength="3" pattern="[A-Za-z\s]+" title="No se permiten números" name="apellidos"/>
       
             <label for="tel">Número de contacto</label>
-            <input type="number" name="tel" id="tel" required maxlength="10" minlength="10"/>
+            <input type="number" name="tel"  required maxlength="10" minlength="10"/>
+
+            <label for="direccion">Dirección</label>
+            <input type="number" name="direccion" required maxlength="10" minlength="10"/>
+
+            <label for="tel">Barrio</label>
+            <input type="number" name="barrio"  required maxlength="10" minlength="10"/>
+
       
             <label for="correo">E-mail</label>
-            <input type="email" name="correo" id="correo" required min="3"/>
+            <input type="email" name="correo"  required min="3"/>
       
             <label for="electro">Tipo de electrodoméstico</label>
             <select name="electro" id="electro" required>
-              <option value="Nevera">Nevera ❄️</option>
-              <option value="Lavadora">Lavadora 🌀</option>
-              <option value="Secadora">Secadora 🔥</option>
+              <option value="1">Nevera ❄️</option>
+              <option value="2">Lavadora 🌀</option>
+              <option value="3">Secadora 🔥</option>
+            </select>
+
+
+            <label for="electro">Tipo de Servicio</label>
+            <select name="electro" id="electro" required>
+              <option value="1">Revisión</option>
+              <option value="2">Reparación</option>
+              <option value="3">Mantenimiento</option>
             </select>
       
             <label for="vistita">Disponibilidad de la Visista</label>
